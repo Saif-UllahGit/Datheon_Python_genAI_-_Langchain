@@ -35,20 +35,6 @@ An AI-powered application that extracts structured information from resumes and 
 - Structured JSON outputs
 - Pydantic validation
 
-## Repository Structure
-
-```text
-Datheon_PythonAI_LangChain/
-│
-├── Python-Basics/
-├── Generative-AI/
-├── LangChain/
-├── AI-Agents/
-├── RAG-Applications/
-├── Projects/
-└── README.md
-```
-
 ## Learning Approach
 
 This repository is maintained as a practical learning and development space for exploring Python, Generative AI, and intelligent AI applications.
