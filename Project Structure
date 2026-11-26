@@ -1,1 +1,26 @@
-
+Datheon_PythonAI_LangChain/
+│
+├── Python/
+│   ├── basics/
+│   └── advanced/
+│
+├── Generative_AI/
+│   ├── gemini_api/
+│   ├── openai_api/
+│   └── prompt_engineering/
+│
+├── LangChain/
+│   ├── chains/
+│   ├── memory/
+│   └── tools/
+│
+├── AI_Agents/
+│
+├── RAG/
+│
+├── Projects/
+│   └── AI_Document_Parser/
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
