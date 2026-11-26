@@ -1,78 +1,92 @@
-# PDF / Text RAG Pipeline (LangChain + ChromaDB / FAISS)
+# Structured Document Analyzer Using Generative AI and Pydantic
 
-Grounded Retrieval-Augmented Generation (RAG) pipeline that loads custom PDF and text documents, splits text recursively with `RecursiveCharacterTextSplitter`, indexes vector embeddings in **ChromaDB** or **FAISS**, and answers user queries strictly from retrieved context using LangChain `RetrievalQA` with source page citations.
+## Introduction
+
+The Structured Document Analyzer is a Python application that extracts important information from unstructured documents, including invoices and resumes, and converts it into structured JSON format.
+
+The application integrates Google Gemini and OpenAI APIs to process document content and identify relevant information. Pydantic v2 is used to validate the extracted data and ensure that the generated output follows predefined schemas.
+
+The system uses prompt engineering, parameterized templates, and few-shot examples to improve information extraction and maintain consistent output.
+
+## Project Objectives
+
+- Extract information from unstructured invoices and resumes.
+- Integrate Generative AI models through Gemini and OpenAI APIs.
+- Convert document information into structured JSON.
+- Implement parameterized prompt templates.
+- Use few-shot prompting to improve extraction quality.
+- Validate extracted information using Pydantic v2.
+- Apply cross-field validation to maintain data consistency.
+- Handle invalid responses through validation and correction.
+- Support different document types and AI providers.
+
+## Technologies and Tools
+
+| Technology | Application |
+|---|---|
+| Python 3.10+ | Application development |
+| Google Gemini API | Document information extraction |
+| OpenAI API | AI-powered document processing |
+| Pydantic v2 | Data validation and schema enforcement |
+| Prompt Engineering | Improving AI responses |
+| Few-Shot Prompting | Guiding information extraction |
+| JSON | Structured data representation |
+| Unittest | Software testing |
 
 ## Project Structure
 
 ```text
-pdf-rag-pipeline/
-├── rag_cli.py                          # Executable CLI & interactive Q&A loop
-├── requirements.txt                    # LangChain, ChromaDB, FAISS, PyPDF dependencies
-├── .env.example                        # API key and model configuration template
+Task_1/
+│
+├── analyze.py
+├── requirements.txt
+├── .env.example
+│
 ├── samples/
-│   ├── company_policy_handbook.pdf     # Sample 3-page PDF document
-│   └── architecture_notes.txt          # Sample plain-text document
-├── src/rag_pipeline/
-│   ├── __init__.py
-│   ├── ingestion.py                    # PyPDFLoader/TextLoader, RecursiveCharacterTextSplitter, Chroma/FAISS
-│   ├── providers.py                    # Gemini, OpenAI, and deterministic offline mock embeddings/LLMs
-│   └── chain.py                        # Strictly grounded RetrievalQA chain + page citations
+│   ├── messy_invoice.txt
+│   └── messy_resume.txt
+│
+├── src/
+│   └── doc_analyzer/
+│       ├── __init__.py
+│       ├── schemas.py
+│       ├── prompts.py
+│       └── analyzer.py
+│
 └── tests/
-    └── test_rag_pipeline.py            # End-to-end ingestion, vector store, citation, and CLI tests
+    └── test_pipeline.py
 ```
 
-## Setup
+## System Components
 
-1. Ensure Python 3.10+ is installed, then create a virtual environment and install dependencies:
+### 1. Main Application (analyze.py)
 
-```powershell
-cd "C:\Users\Saif Ullah\.gemini\antigravity\scratch\pdf-rag-pipeline"
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
+The main Python script controls the execution of the application. It accepts input documents, identifies the document type, selects the AI provider, and processes the extracted information.
 
-2. Copy `.env.example` to `.env` and set `GEMINI_API_KEY` or `OPENAI_API_KEY`.
+### 2. Data Schemas (schemas.py)
 
-## Usage
+Defines Pydantic models for invoices and resumes. These schemas specify the expected fields, data types, and validation rules for the generated information.
 
-### Index a Custom PDF in ChromaDB & Ask a Question (Gemini)
+### 3. Prompt Templates (prompts.py)
 
-```powershell
-python rag_cli.py `
-  --docs samples/company_policy_handbook.pdf `
-  --persist-dir .chroma_db `
-  --vectorstore chroma `
-  --provider gemini `
-  --question "How many weeks of paid parental leave do employees receive?"
-```
+Contains parameterized prompts and few-shot examples designed to guide the AI model in extracting accurate information from different document types.
 
-### Query an Existing Persisted Index Without Re-Indexing
+### 4. Document Analyzer (analyzer.py)
 
-```powershell
-python rag_cli.py --load-only --persist-dir .chroma_db --vectorstore chroma --provider gemini --interactive
-```
+Handles API communication with Google Gemini and OpenAI. It processes AI responses, validates the generated data, and handles validation errors through correction attempts.
 
-### Use FAISS & OpenAI with JSON Citation Output
+### 5. Sample Documents (samples/)
 
-```powershell
-python rag_cli.py `
-  --docs samples/ `
-  --persist-dir .faiss_index `
-  --vectorstore faiss `
-  --provider openai `
-  --question "What is the travel meals daily cap?" `
-  --json
-```
+Contains sample invoice and resume documents used to test the document analysis process.
 
-### Run Offline with Mock Embeddings & LLM
+### 6. Test Suite (tests/)
 
-```powershell
-python rag_cli.py --docs samples/company_policy_handbook.pdf --provider mock --vectorstore faiss -q "What is the home office stipend?"
-```
+Contains automated tests for data schemas, prompt generation, validation, correction handling, and command-line execution.
 
-## Running Tests
+## Installation and Configuration
 
-```powershell
-python -m unittest discover -s tests -v
-```
+### 1. Prerequisites
+
+- Python 3.10 or later
+- pip package manager
+- Google Gemini API key or Open
