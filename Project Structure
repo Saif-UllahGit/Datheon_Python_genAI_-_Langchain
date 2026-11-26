@@ -2,7 +2,7 @@ Datheon_PythonAI_LangChain/
 │
 ├── src/
 │   ├── __init__.py
-│   ├── gemini_client.py
+│   ├── analyzer.py
 │   ├── prompts.py
 │   └── schemas.py
 │
