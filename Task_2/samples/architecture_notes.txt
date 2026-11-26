@@ -1,0 +1,11 @@
+NovaTech Engineering Architecture Notes
+========================================
+
+1. Service Ownership & SLA
+All tier-1 microservices must maintain 99.95% monthly availability and expose a /healthz endpoint
+returning HTTP 200 within 100ms. On-call rotations run Monday 09:00 UTC to Monday 09:00 UTC.
+
+2. Database & Vector Indexing Standards
+Production relational workloads run on PostgreSQL 16 with automated daily snapshots retained for 35 days.
+Internal document search pipelines use RecursiveCharacterTextSplitter (chunk size 800, overlap 150)
+and store normalized embeddings in ChromaDB with cosine similarity search.

@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 651 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(NovaTech Corp Employee Handbook - Page 1: Remote Work & Core Hours) Tj T*
+(Effective Date: January 1, 2026 | Document ID: POL-2026-01) Tj T*
+(1. Hybrid & Remote Policy: Full-time engineers may work remotely up to 4 days per week.) Tj T*
+(Tuesdays are mandatory in-office collaboration days for all regional hub employees.) Tj T*
+(2. Core Collaboration Hours: All team members must be reachable between 10:00 and 15:00 local time.) Tj T*
+(3. Home Office Stipend: New hires receive a one-time USD 1,200 ergonomic equipment stipend) Tj T*
+(reimbursable within 90 days of their start date via the Expensify portal.) Tj T*
+ET
+
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 662 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(NovaTech Corp Employee Handbook - Page 2: Paid Time Off & Parental Leave) Tj T*
+(4. Annual Paid Time Off \(PTO\): Employees accrue 22 days of PTO per calendar year.) Tj T*
+(Up to 5 unused PTO days may roll over to Q1 of the following year; excess days expire March 31.) Tj T*
+(5. Parental Leave: Primary and secondary caregivers receive 16 weeks of 100% paid parental leave) Tj T*
+(available within 12 months of birth, adoption, or foster placement.) Tj T*
+(6. Sabbatical Benefit: After 5 consecutive years of full-time service, employees qualify for) Tj T*
+(a 4-week paid sabbatical approved at least 60 days in advance.) Tj T*
+ET
+
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 717 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(NovaTech Corp Employee Handbook - Page 3: Security & Expense Compliance) Tj T*
+(7. Device Encryption & MFA: Company laptops must have FileVault or BitLocker full-disk) Tj T*
+(encryption enabled. Hardware security keys \(FIDO2\) are mandatory for production SSH and VPN access.) Tj T*
+(8. AI Tooling Policy: Confidential customer PII or proprietary source code must never be pasted) Tj T*
+(into unapproved consumer AI tools. Only enterprise-approved Gemini and OpenAI endpoints with) Tj T*
+(zero data retention enabled may be used for internal engineering workflows.) Tj T*
+(9. Travel Meals Cap: Business travel meals are reimbursed up to USD 75 per day with itemized receipts.) Tj T*
+ET
+
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000001025 00000 n 
+0000001151 00000 n 
+0000001864 00000 n 
+0000001990 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+2758
+%%EOF
