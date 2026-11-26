@@ -1,0 +1,12 @@
+{
+  "project": "Phoenix RAG Rollout",
+  "owner": "Platform AI Team",
+  "monthly_budget_usd": 12500,
+  "model_tier": "gemini-2.5-flash",
+  "sla_latency_ms": 450,
+  "milestones": [
+    {"phase": "Ingestion", "status": "completed", "cost_usd": 3200},
+    {"phase": "Evaluation", "status": "in_progress", "cost_usd": 4100},
+    {"phase": "Production Cutover", "status": "planned", "cost_usd": 5200}
+  ]
+}

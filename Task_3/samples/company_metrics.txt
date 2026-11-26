@@ -1,0 +1,8 @@
+NovaTech Q3 2026 Financial Snapshot
+====================================
+Active Enterprise Customers: 420
+Average Annual Contract Value (ACV): $18,500
+Q3 Operating Expenses: $1,940,000
+Planned Q4 R&D Headcount Additions: 6 engineers @ $165,000 annual base each
+Target YoY Revenue Growth Rate: 14.5%
+Primary Cloud Region: us-west-2

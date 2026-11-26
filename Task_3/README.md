@@ -1,4 +1,4 @@
-# LangChain Autonomous Tool-Calling Research Agent
+## LangChain Autonomous Tool-Calling Research Agent
 
 ## Project Overview
 
