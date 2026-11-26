@@ -1,0 +1,34 @@
+============================================================
+JORDAN M. CHEN
+Email: jordan.chen.dev@gmail.com | Ph: +1 (206) 555-0183
+San Francisco, CA | linkedin.com/in/jordanchen-ml | github.com/jchen-ai
+============================================================
+
+SUMMARY
+Staff-level Machine Learning & Backend Engineer with ~7 yrs building low-latency inference APIs,
+LLM evaluation harnesses, and distributed data pipelines in Python and Go.
+
+EXPERIENCE
+* Lead ML Platform Engineer — Stratos AI (Jan 2024 - Present) | SF, CA
+  - Architected multi-provider LLM gateway (Gemini + OpenAI) serving 18M reqs/day at 99.97% uptime.
+  - Enforced strict Pydantic output contracts reducing downstream parsing failures by 94%.
+  - Mentored team of 6 backend & MLOps engineers.
+
+* Senior Software Engineer — PulseStream Corp (May 2021 - Dec 2023) | Seattle, WA
+  - Built real-time Kafka + FastAPI fraud scoring microservice processing 12k events/sec.
+  - Cut AWS EKS compute spend by 28% via autoscaling and spot-instance orchestration.
+
+* Software Engineer — HarborTech Systems (Jul 2019 - Apr 2021) | Seattle, WA
+  - Developed REST APIs in Django and PostgreSQL for healthcare scheduling workflows.
+
+EDUCATION
+M.S. in Computer Science, Stanford University (2019) - GPA 3.9/4.0
+B.S. in Computer Engineering, UC Berkeley (2017)
+
+SKILLS & CERTIFICATIONS
+Languages: Python, Go, SQL, TypeScript, English, Mandarin
+Tech: FastAPI, PyTorch, Pydantic, Docker, Kubernetes, Kafka, PostgreSQL, Redis, Terraform, AWS
+Certs: AWS Certified Machine Learning - Specialty; Certified Kubernetes Administrator (CKA)
+
+PROJECTS
+- SchemaGuard: Open-source library for zero-downtime JSON schema migration & LLM retry recovery (Python, Pydantic).

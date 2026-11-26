@@ -1,0 +1,26 @@
+*** TAX INVOICE / STATEMENT OF CHARGES ***
+From: Apex Cloud Security Partners LLC
+Reg / Tax ID: EIN 82-4491023  |  Email: receivables@apexcloudsec.com  |  Tel: (415) 890-4412
+Address: 550 Howard Street, Suite 400, San Francisco, CA 94105
+
+Invoice No: INV-2026-4409
+Date Issued: Nov 12, 2026      Payment Due: Dec 12, 2026   (Terms: Net 30)
+
+Billed To -> Meridian Health Analytics Inc.
+Attn: Accounts Payable <ap@meridianhealth.org>
+1200 Congress Ave, Austin, TX 78701 | Tax Ref: TX-901122
+
+--------------------------------------------------------------------
+LINE ITEMS (Currency: USD $)
+1) SOC2 Readiness Gap Audit (Fixed Package)   Qty: 1    Unit: $3,500.00   Tax: 0%   Total: $3,500.00
+2) Cloud IAM Penetration Test                 Qty: 24   Unit: $175.00/hr  Tax: 8.25% Total: $4,200.00
+3) Automated Compliance Alerting Setup        Qty: 2    Unit: $450.00     Tax: 8.25% Total: $900.00
+--------------------------------------------------------------------
+
+Subtotal ........................ $8,600.00
+Partner Early-Bird Discount ..... -$300.00
+Sales Tax (8.25% on items 2 & 3). $420.75
+--------------------------------------------------------------------
+BALANCE PAYABLE: $8,720.75
+Payment Status: Awaiting wire transfer (UNPAID)
+Notes: Reference INV-2026-4409 on ACH/wire memo.
