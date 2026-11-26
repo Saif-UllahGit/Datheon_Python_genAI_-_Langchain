@@ -1,26 +1,22 @@
 Datheon_PythonAI_LangChain/
 │
-├── Python/
-│   ├── basics/
-│   └── advanced/
+├── src/
+│   ├── __init__.py
+│   ├── gemini_client.py
+│   ├── prompts.py
+│   └── schemas.py
 │
-├── Generative_AI/
-│   ├── gemini_api/
-│   ├── openai_api/
-│   └── prompt_engineering/
+├── tests/
+│   └── test_pipeline.py
 │
-├── LangChain/
-│   ├── chains/
-│   ├── memory/
-│   └── tools/
+├── samples/
+│   ├── resume.txt
+│   └── invoice.txt
 │
-├── AI_Agents/
+├── outputs/
 │
-├── RAG/
-│
-├── Projects/
-│   └── AI_Document_Parser/
-│
+├── analyze.py
 ├── requirements.txt
-├── .gitignore
-└── README.md
+├── README.md
+├── LICENSE
+└── .gitignore
